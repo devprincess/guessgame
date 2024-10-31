@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--WELCOME PAGE1-->
+<div class="container1 gradient-1">
+    <div class="game-name">
+        <p class="line">Guessing Game</p>
+    </div>
+    <div class="home-btn">
+      <button id="beginBtn" class="check-btn">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="43" viewBox="0 0 80 43" fill="none">
+            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M42.2286 0H21.5C9.62588 0 0 9.62588 0 21.5C0 33.3741 9.62588 43 21.5 43H79.5614L42.2286 0Z" fill="#A6F208"/>
+          </svg>
+          <span>Begin</span>
+        </div>
+      </button>
+    </div>
+</div>
+
+<!--MAIN PAGE 2-->
+<div class="container2 gradient-2">
+  <div class="flex-container2">
+    <button class="reset-btn" id="resetBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="61.5 11.54 25 17" fill="none">
+        <path d="M74.0556 10.6449C73.9848 10.6434 73.9142 10.6427 73.8437 10.6427C68.0969 10.6427 63.4216 15.3166 63.4216 21.0626C63.4216 26.8091 68.0969 31.4827 73.8437 31.4827C79.5905 31.4825 84.2648 26.8088 84.2648 21.0624V20.7224V20.379L84.2324 20.3665C84.0555 19.1017 82.9681 18.1279 81.6545 18.1279C80.2162 18.1279 79.0491 19.2927 79.0491 20.7317C79.0491 20.8191 79.0542 20.9058 79.0629 20.9894V21.0624C79.0629 23.9398 76.7215 26.2814 73.8442 26.2814C70.967 26.2814 68.6251 23.9397 68.6251 21.0624C68.6251 18.1866 70.967 15.8438 73.8442 15.8438C73.9148 15.8438 73.9854 15.8453 74.0561 15.8481V16.2506V16.2644V16.7506H74.1145C74.3326 17.6407 75.1362 18.3017 76.094 18.3017C76.738 18.3017 77.3038 17.9998 77.6737 17.5422L80.3168 14.892C80.722 14.5223 80.9861 13.9908 80.9861 13.3897C80.9861 12.713 80.6556 12.1177 80.153 11.749L77.6028 9.19529C77.5564 9.14207 77.5089 9.095 77.4619 9.05271L77.4267 9.01772L77.2804 8.87221H77.2304C76.9089 8.65292 76.5198 8.51959 76.0938 8.51959C75.0988 8.51959 74.2826 9.23189 74.1011 10.1673L74.0556 10.202V10.4496V10.6449Z" fill="white" stroke="#39BD01"></path>
+        <defs>
+          <filter id="filter0_d_1_1881" x="0" y="0" width="39.6863" height="42.6863" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="3"></feOffset>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.15 0 0 0 0 0.352162 0 0 0 1 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1881"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1881" result="shape"></feBlend>
+          </filter>
+          <filter id="filter1_d_1_1881" x="108" y="54" width="40" height="43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="3"></feOffset>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.1625 0 0 0 0 0.762972 0 0 0 1 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1881"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1881" result="shape"></feBlend>
+          </filter>
+          <filter id="filter2_d_1_1881" x="108" y="0" width="39.6863" height="42.6863" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="3"></feOffset>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.469182 0 0 0 0 0.180278 0 0 0 0 0.983333 0 0 0 1 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1881"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1881" result="shape"></feBlend>
+          </filter>
+          <filter id="filter3_d_1_1881" x="54" y="54" width="39.6863" height="42.6863" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="3"></feOffset>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.00392157 0 0 0 0 0.705882 0 0 0 0 0.929412 0 0 0 1 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1881"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1881" result="shape"></feBlend>
+          </filter>
+          <filter id="filter4_d_1_1881" x="54" y="0" width="39.6863" height="42.6863" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="3"></feOffset>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.225553 0 0 0 0 0.741667 0 0 0 0 0.00309026 0 0 0 1 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1881"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1881" result="shape"></feBlend>
+          </filter>
+          <filter id="filter5_d_1_1881" x="0" y="54" width="39.6863" height="42.6863" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+            <feOffset dy="3"></feOffset>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.801083 0 0 0 0 0.0958334 0 0 0 1 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1881"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1881" result="shape"></feBlend>
+          </filter>
+        </defs>
+      </svg>
+    </button>
+    <div class="flex-container">
+      <span id="trialText">3 trials</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 17" fill="none">
+        <path d="M10.8643 1.58645L8.54707 1.12122L8.41312 1.78469C6.25302 2.55801 4.39922 4.86187 3.80003 7.8435C3.20085 10.8251 4.02417 13.663 5.71635 15.2132L5.5833 15.8776L7.90502 16.3428C10.9876 16.9625 14.1505 14.1604 14.9693 10.0858C15.7882 6.01113 13.9469 2.20528 10.8643 1.58645Z" fill="#E86124"/>
+        <path d="M8.33811 14.1666L6.02085 13.6969L6.1539 13.0334C4.67157 11.6752 3.85718 9.3303 4.07953 6.76569C3.96605 7.11938 3.87273 7.47923 3.80003 7.8435C3.20085 10.826 4.02417 13.663 5.71635 15.2132L5.5833 15.8776L7.90502 16.3428C10.9876 16.9625 14.1505 14.1604 14.9693 10.0858C15.0404 9.72269 15.0917 9.35603 15.1229 8.9874C14.0094 12.4611 11.1411 14.7256 8.33811 14.1666Z" fill="#DC4A26"/>
+        <path d="M12.6465 9.6215C13.4652 5.54645 11.6297 1.74087 8.54686 1.12149C5.46399 0.502117 2.30112 3.30349 1.48241 7.37853C0.663698 11.4536 2.49916 15.2592 5.58204 15.8785C8.66491 16.4979 11.8278 13.6965 12.6465 9.6215Z" fill="#F0E92D"/>
+        <path d="M11.1039 9.31154C11.6964 6.3626 10.3681 3.60867 8.13721 3.16045C5.90628 2.71224 3.61747 4.73948 3.025 7.68842C2.43253 10.6374 3.76076 13.3913 5.99169 13.8395C8.22262 14.2877 10.5114 12.2605 11.1039 9.31154Z" fill="#EF8521"/>
+        <path d="M7.00759 12.4128C4.7573 11.961 3.19907 9.88036 3.07851 7.44434C3.05946 7.5247 3.0416 7.60596 3.02494 7.68812C2.4329 10.6349 3.76164 13.3906 5.99228 13.8389C7.42818 14.1273 8.88729 13.3924 9.90349 12.0413C9.00385 12.4754 7.98765 12.6057 7.00759 12.4128Z" fill="#E86124"/>
+      </svg>
+    </div> 
+  </div>
+  <main class="main-container">
+    <div class="hero-div">
+      <h2 class="hero-text" id="heroText">Guess a Magic Number</h2>
+      <p class="bottom-text" id="bottomText">Enter a number between 1-100</p>
+    </div>
+    <div class="game-div">
+      <div class="input-card">
+        <input type="text" id="inputText" value="" maxlength="3" onkeypress="onlyDigits(event)">
+      </div>
+      <button class="check-btn" id="checkBtn">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="43" viewBox="0 0 80 43" fill="none">
+            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M42.2286 0H21.5C9.62588 0 0 9.62588 0 21.5C0 33.3741 9.62588 43 21.5 43H79.5614L42.2286 0Z" fill="#A6F208"/>
+          </svg>
+          <span>Check</span>
+        </div>
+      </button>
+    </div>
+  </main>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
