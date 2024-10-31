@@ -3,7 +3,7 @@ function onlyDigits(event) {
   // Allow control keys (backspace, delete, arrow keys, etc.)
   if (
       charCode == 8 || // Backspace
-      charCode == 46 || // Delete
+      charCode == 127 || // Delete
       (charCode >= 37 && charCode <= 40) // Arrow keys
   ) {
       return true;
@@ -13,6 +13,7 @@ function onlyDigits(event) {
       event.preventDefault();
       return false;
   }
+
   return true;
 }
 
